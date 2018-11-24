@@ -6,17 +6,19 @@ subtitle: Tomorrow starts today.
 
 My name is Hung Tran Duc. From VietNam. 
 
-### My favorites: 
+# My favorites
 
-- Book about physical. 
+- Book about physical.
 - Think about human.
 
-### My idol
+# My idol
+
 - [Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein)
 - [Stephen Hawking](https://en.wikipedia.org/wiki/Stephen_Hawking)
 - [Rousseau](https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau)
 - [Alan Phan](https://vi.wikipedia.org/wiki/Alan_Phan) - The man create my inspiration.
 
-### My history
+# My history
+
 - Born in QuangNgai-VietNam
 - Study in HoChiMinh.
