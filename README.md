@@ -1,3 +1,6 @@
+Fork from Dean Attali github
+============================
+
 # Beautiful Jekyll
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/daattali/20)
