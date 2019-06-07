@@ -1,3 +1,4 @@
+---
 layout: post
 title: Angular form Ionic 4
 ---
@@ -6,22 +7,25 @@ title: Angular form Ionic 4
 
 ### Import APIs for Reactive forms
 - In App.module
-```typescript
-	import { ReactiveFormsModule } from '@angular/forms';
 
-	@NgModule({
-	  declarations: [...],
-	  imports: [
-	    ...,
-	    ReactiveFormsModule
-	  ],
-	  providers: [...],
-	  bootstrap: [...]
-	})
+```typescript
+import { ReactiveFormsModule } from '@angular/forms';
+
+@NgModule({
+	declarations: [...],
+	imports: [
+		...,
+		ReactiveFormsModule
+	],
+	providers: [...],
+	bootstrap: [...]
+})
 	export class AppModule { }
 ```
+
 - In page/component 
-```
+
+```typescript
 	@NgModule({
 	  imports: [
 	    CommonModule,
@@ -35,36 +39,39 @@ title: Angular form Ionic 4
 	})
 ```
 ### Create form in Component
-```
-	import { Component, OnInit } from '@angular/core';
-	import { FormGroup, FormControl } from '@angular/forms';
 
-	@Component({
-	  selector: 'example',
-	  templateUrl: './example.html',
-	  styleUrls: ['./example.scss']
-	})
-	export class Example implements OnInit {
-	  rfContact: FormGroup;
-	  constructor() { }
+```typescript
 
-	  ngOnInit() {
-	    this.rfContact = new FormGroup({
-	      contactName: new FormControl(),
-	      email: new FormControl(),
-	      social: new FormGroup({
-	        facebook: new FormControl(),
-	        twitter: new FormControl(),
-	        website: new FormControl()
-	      }),
-	      tel: new FormControl()
-	    });
-	  }
+import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
-	  onSubmit() {
-	    // Do something awesome
-	    console.log(this.rfContact);
-	  }
+@Component({
+	selector: 'example',
+	templateUrl: './example.html',
+	styleUrls: ['./example.scss']
+})
+export class Example implements OnInit {
+	rfContact: FormGroup;
+	constructor() { }
+
+	ngOnInit() {
+		this.rfContact = new FormGroup({
+			contactName: new FormControl(),
+			email: new FormControl(),
+			social: new FormGroup({
+				facebook: new FormControl(),
+				twitter: new FormControl(),
+				website: new FormControl()
+			}),
+			tel: new FormControl()
+		});
 	}
+
+	onSubmit() {
+		// Do something awesome
+		console.log(this.rfContact);
+	}
+}
 ```
+
 ### 
